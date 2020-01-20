@@ -1,7 +1,7 @@
 <div *ngIf="user">
     <div class="panel panel-default">
         <div class="panel-heading">
-            <h3 class="panel-title">{{user.login}}</h3>
+            <h3 class="panel-title">{{user.name}}</h3>
         </div>
         <div class="panel-body">
             <div class="row">
@@ -23,6 +23,28 @@
                         <li class="list-group-item"><strong>Blog: </strong>{{user.blog}}</li>
                         <li class="list-group-item"><strong>Member Since: </strong>{{user.created_at}}</li>
                     </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="panel panel-default">
+        <div class="panel-heading">
+            <h3 class="panel-title">Repos</h3>
+        </div>
+        <div class="panel-body">
+            <div class="row">
+                <div class="col-md-12">
+                    <div *ngFor="let repo of repos">
+                        <div class="row">
+                            <div class="col-md-9">
+                                <h4>{{repo.name}}</h4>
+                            </div>
+                            <div class="col-md-3">
+
+                            </div>
+                        </div>
+                    </div>
                 </div>
             </div>
         </div>
