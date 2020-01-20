@@ -10,10 +10,13 @@ export class DevelopersComponent implements OnInit {
 
   user:any;
   repos:any;
+  username:string;
 
   constructor(private developersService:DevelopersService) {
     console.log('Developers Component Init...');
+  }
 
+  search(){
     this.developersService.getUser().subscribe(user => {
       this.user = user;
     });
