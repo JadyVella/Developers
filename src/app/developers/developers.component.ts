@@ -8,12 +8,14 @@ import { DevelopersService } from '../developers-service/developers.service';
 })
 export class DevelopersComponent implements OnInit {
 
+  user:any;
+
   constructor(private developersService:DevelopersService) {
     console.log('Developers Component Init...');
 
     this.developersService.getUser().subscribe(user => {
-      console.log(user);
-    })
+      this.user = user;
+    });
   }
 
   ngOnInit() {
