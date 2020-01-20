@@ -6,6 +6,7 @@ import { DevelopersService } from '../developers-service/developers.service';
   templateUrl: './developers.component.html',
   styleUrls: ['./developers.component.css']
 })
+
 export class DevelopersComponent implements OnInit {
 
   user:any;
@@ -13,10 +14,11 @@ export class DevelopersComponent implements OnInit {
   username:string;
 
   constructor(private developersService:DevelopersService) {
-    console.log('Developers Component Init...');
   }
 
   search(){
+    console.log('Developers Component Init...');
+
     this.developersService.updateUsername(this.username);
 
     this.developersService.getUser().subscribe(user => {
