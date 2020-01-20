@@ -17,6 +17,8 @@ export class DevelopersComponent implements OnInit {
   }
 
   search(){
+    this.developersService.updateUsername(this.username);
+
     this.developersService.getUser().subscribe(user => {
       this.user = user;
     });
