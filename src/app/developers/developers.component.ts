@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { DevelopersService } from '../developers-service/developers.service';
 
 @Component({
   selector: 'app-developers',
@@ -7,8 +8,12 @@ import { Component, OnInit } from '@angular/core';
 })
 export class DevelopersComponent implements OnInit {
 
-  constructor() {
+  constructor(private developersService:DevelopersService) {
     console.log('Developers Component Init...');
+
+    this.developersService.getUser().subscribe(user => {
+      console.log(user);
+    })
   }
 
   ngOnInit() {
