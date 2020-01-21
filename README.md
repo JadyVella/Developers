@@ -26,4 +26,4 @@ To view this website, follow this link https://jadyvella.github.io/Developers/
 
 ## Licence & Copyright
 - Licensed under [MIT LICENCE](LICENCE)
-Copyright (c) 2019 **Felix Ouma**	Copyright (c) 2020 **Felix Ouma**
+Copyright (c) 2020 **Felix Ouma**
