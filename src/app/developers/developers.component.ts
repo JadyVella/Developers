@@ -19,8 +19,21 @@ export class DevelopersComponent implements OnInit {
   search(){
     console.log('Developers Component Init...');
 
-    this.developersService.updateUsername(this.username);
+        this.developersService.updateUsername(this.username);
 
+        this.developersService.getUser().subscribe(user => {
+          this.user = user;
+        });
+    
+        this.developersService.getRepos().subscribe(repos => {
+          this.repos = repos;
+        });
+
+
+  }
+
+  ngOnInit() {
+    this.username= 'JadyVella';
     this.developersService.getUser().subscribe(user => {
       this.user = user;
     });
@@ -28,9 +41,6 @@ export class DevelopersComponent implements OnInit {
     this.developersService.getRepos().subscribe(repos => {
       this.repos = repos;
     });
-  }
-
-  ngOnInit() {
   }
 
 }
