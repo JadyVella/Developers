@@ -10,4 +10,5 @@ To view another person's public repositories you'll just have to type his/her us
 ## Author Information
 The person who created this file and styled it is Felix
 
-## 
+## Setup Instructions
+To view this website, follow this link https://jadyvella.github.io/Developers/
