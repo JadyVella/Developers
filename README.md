@@ -6,3 +6,8 @@ This website helps one to find another persons Github Public Repositories accomp
 
 ## BDD
 To view another person's public repositories you'll just have to type his/her username
+
+## Author Information
+The person who created this file and styled it is Felix
+
+## 
