@@ -12,3 +12,9 @@ The person who created this file and styled it is Felix
 
 ## Setup Instructions
 To view this website, follow this link https://jadyvella.github.io/Developers/
+
+## Technologies
+* HTML
+* CSS
+* Bootstrap
+* Angular
